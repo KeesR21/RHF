@@ -93,7 +93,7 @@
 
           <ul class="md:flex-col md:min-w-full flex flex-col list-none">
             <li class="items-center">
-              <a href="/dashboard" class="text-xs uppercase py-3 font-bold block text-pink-500 hover:text-pink-600">
+              <a href="/dashboard" class="text-xs uppercase py-3 font-bold block text-indigo-500 hover:text-indigo-600">
                 <i class="fas fa-tv mr-2 text-sm opacity-75"></i>
                 Dashboard
               </a>
@@ -162,7 +162,7 @@
         </div>
       </nav>
       <!-- Header -->
-      <div class="relative bg-pink-600 md:pt-32 pb-32 pt-12">
+      <div class="relative bg-indigo-700 md:pt-32 pb-32 pt-12">
 
 
         <div class="px-4 md:px-10 mx-auto w-full">
