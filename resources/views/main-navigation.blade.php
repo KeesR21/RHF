@@ -2,8 +2,8 @@
     <header id="site-header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg stroke">
-                <a class="navbar-brand" href="#index.html">
-                    <img src="assets/images/RHF LOGO.jpg" alt="Your logo" title="Your logo" style="height:60px;" />
+                <a class="navbar-brand" href="/">
+                    <img src="{{ asset('images/RHF_LOGO.JPG') }}" alt="Your logo" title="Your logo" style="height:60px;" />
                 </a>
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
@@ -27,9 +27,6 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="/contact-us">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login">Login</a>
                         </li>
                         <!-- //search button -->
                     </ul>

@@ -13,18 +13,19 @@ class BoardMembers extends Component
 {
     use WithFileUploads;
     public $member;
-    public $fname;
-    public $lname;
+    public $firstName;
+    public $lastName;
     public $position;
     public $photo;
+    public $photo_preview = false;
     public $email;
     public $url;
     public $m_id;
     public $edit = false;
 
     protected $rules = [
-        'fname' => 'required|min:3|max:50',
-        'lname' => 'required|min:3|max:50',
+        'firstName' => 'required|min:3|max:50',
+        'lastName' => 'required|min:3|max:50',
         'email' => 'required|email',
         'position' => 'required|min:3|max:40',
         'photo' => 'required|image|mimes:jpg,jpeg,png|max:3072'
@@ -36,10 +37,16 @@ class BoardMembers extends Component
             $this->validate();
 
             $url = $this->photo->store('members', 'public');
-            $this->url = $url;
+            
+                $this->url = $url;
+                $this->photo_preview = true;
+
+                
+                // dd($this->photo_preview);
+
 
             Member::create([
-                'names' => $this->fname . " " . $this->lname,
+                'names' => $this->firstName . " " . $this->lastName,
                 'email' => $this->email,
                 'position' => $this->position,
                 'photo' => $url
@@ -48,19 +55,20 @@ class BoardMembers extends Component
             session()->flash('message', 'Member saved Successfully');
 
             $this->resetInputs();
+            $this->photo_preview = false;
         } else {
             if ($this->member) {
 
                 $member = $this->member;
                 $this->validate([
-                    'fname' => 'required|min:3|max:50',
-                    'lname' => 'required|min:3|max:50',
+                    'firstName' => 'required|min:3|max:50',
+                    'lastName' => 'required|min:3|max:50',
                     'email' => 'required|email',
                     'position' => 'required|min:3|max:40',
                 ]);
 
                 $member->update([
-                    'names' => $this->fname . " " . $this->lname,
+                    'names' => $this->firstName . " " . $this->lastName,
                     'email' => $this->email,
                     'position' => $this->position,
                 ]);
@@ -81,8 +89,8 @@ class BoardMembers extends Component
 
         $this->m_id = $member->id;
         $names = explode(" ", $member->names);
-        $this->fname = $names[0];
-        $this->lname = $names[1];
+        $this->firstName = $names[0];
+        $this->lastName = $names[1];
         $this->email = $member->email;
         $this->position = $member->position;
         $this->photo = $member->photo;
@@ -101,8 +109,8 @@ class BoardMembers extends Component
 
     public function resetInputs()
     {
-        $this->fname = '';
-        $this->lname = '';
+        $this->firstName = '';
+        $this->lastName = '';
         $this->email = '';
         $this->position = '';
         $this->photo = '';

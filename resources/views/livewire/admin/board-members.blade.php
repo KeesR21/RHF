@@ -30,14 +30,14 @@
                                 <div class="grid grid-cols-6 gap-6">
                                     <div class="col-span-6 sm:col-span-3">
                                         <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                                        <input type="text" wire:model="fname" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                        @error('fname') <span class="error" style="color:crimson">{{ $message }}</span> @enderror
+                                        <input type="text" wire:model="firstName" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                        @error('firstName') <span class="error" style="color:crimson">{{ $message }}</span> @enderror
                                     </div>
 
                                     <div class="col-span-6 sm:col-span-3">
                                         <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                                        <input type="text" wire:model="lname" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                        @error('lname') <span class="error" style="color:crimson">{{ $message }}</span> @enderror
+                                        <input type="text" wire:model="lastName" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                        @error('lastName') <span class="error" style="color:crimson">{{ $message }}</span> @enderror
                                     </div>
 
                                     <div class="col-span-6 sm:col-span-4">
@@ -60,7 +60,11 @@
                                     </label>
                                     @if($edit)
                                     <img src="{{ asset('images/uploads/'.$photo) }}" alt="">
+
+                                    @elseif($photo)
+                                    <img src="{{ $photo->temporaryUrl() ?? '' }}" alt="">
                                     @endif
+                                   
                                     <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                                         <div class="space-y-1 text-center">
                                             <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">

@@ -8,7 +8,7 @@
                             <div class="col-md-6 col-6 footer-list-29">
                                 <ul>
                                     <h6 class="footer-title-29">Location</h6>
-                                    <li class="d-flex align-items-center py-2"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>10001, 5th Kigali, Rwanda</li>
+                                    <li class="d-flex align-items-center py-2"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>{{ $location[0] }}</li>
                                 </ul>
                             </div>
                             <div class="col-md-6 col-6 footer-list-29">
@@ -25,9 +25,10 @@
                         <h6 class="footer-title-29">Contact Info </h6>
                         <ul>
 
-                            <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2" aria-hidden="true"></i><a href="tel:+12 23456790">+12
-                                    23456790</a></li>
-                            <li class="d-flex align-items-center py-2"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:info@rhf.rw">info@rhf.rw</a></li>
+                            <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2" aria-hidden="true"></i><a href="tel:{!! $phone !!}">
+                                {!! $phone !!}
+                            </a></li>
+                            <li class="d-flex align-items-center py-2"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:info@rhf.rw">{!! $email[0] !!}</a></li>
                         </ul>
                     </div>
                 </div>

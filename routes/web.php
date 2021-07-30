@@ -8,6 +8,7 @@ use App\Http\Livewire\ContactUs;
 use App\Http\Livewire\Admin\Posts;
 use App\Http\Livewire\Admin\BoardMembers;
 use App\Http\Livewire\Admin\EditPost;
+use App\Http\Livewire\Admin\EditSettings;
 use App\Http\Livewire\Admin\EditUser;
 use App\Http\Livewire\Admin\Partners;
 use App\Http\Livewire\Admin\Projects as OurProjects;
@@ -35,5 +36,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::get('/board-members', BoardMembers::class);
         Route::get('/update/{id}', EditUser::class);
         Route::get('/partners', Partners::class);
+        Route::get('/settings', EditSettings::class);
     });
 });

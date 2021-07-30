@@ -30,16 +30,17 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6 about-2-secs-left pr-lg-5">
                     <h3 class="title-style mb-sm-3 mb-2">Few Words About Us!</h3>
-                    <p>The Rwanda Healthcare Federation (RHF) is the premier private health sector body in Rwanda with an ultimate goal of advocating for the interests of the private health sector and promoting access to affordable, equitable and quality health services. The RHF brings together non-state actors in the healthcare space including but not limited to health professionals’ associations, Non-Government Organizations (NGOs) and Faith Based Organizations (FBOs).
+                    <p>
+                        {!! $about[0] !!}
                     </p>
 
 
                     <div class="mt-4">
-                        <a class="btn btn-style-white btn-style-primary" href="projects.html">View Our Projects</a>
+                        <a class="btn btn-style-white btn-style-primary" href="/our-projects">View Our Projects</a>
                     </div>
                 </div>
                 <div class="col-lg-6 about-2-secs-right mt-lg-0 mt-5">
-                    <img src="{{ asset('images/about2.jpg') }}" alt="" class="img-fluid img-responsive" />
+                    <img src="{{ asset('images/about.jpg') }}" alt="" class="img-fluid img-responsive" />
                 </div>
             </div>
         </div>

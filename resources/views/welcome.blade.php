@@ -50,11 +50,9 @@
                 <div class="col-lg-6 w3l-features-photo-7_top-left pr-lg-5">
                     <h4 class="title-style mb-2">Welcome message</h4>
                     <p>
-                        Dear Visitors,
-                        This is with great honor to have you visit Rwanda Healthcare Federation (RHF). The Rwanda Healthcare Federation (RHF) is the premier private health sector body in Rwanda with an ultimate goal of advocating for the interests of the private health sector and promoting access to affordable, equitable and quality health services. The RHF brings together non-state actors in the healthcare space including but not limited to health professionals’ associations, Non-Government Organizations (NGOs) and Faith Based Organizations (FBOs).
-                        In order for the private health sector to remain engaged and continue to provide quality healthcare services to the community, improved collaboration and partnerships are critical. RHF brings together all its members for a continued dialogue and engagement towards achieving national health priorities and Sustainable Development Goals (SDGs).
-                        I welcome you to partner with us for this noble work and on behalf of RHF thank you for your interest in healthcare service delivery.
-                        Thank You<br>
+                        {!! $welcome[0] !!}
+                        
+                        <br>
                         <b>Dr. Jean Chrysostome Nyirinkwaya</b><br>
                         <b>Chairman</b>
 
@@ -140,10 +138,10 @@
                     <div class="col-md-7 float-rt text-md-right align-items-center mt-md-0 mt-4">
                         <ul class="buttons">
                             <li class="phone-sec"><span class="fa fa-volume-control-phone mr-1" aria-hidden="true"></span>
-                                <a class="call-style-w3" href="tel:+(250) 788 898 262">+(250) 788 898 262</a>
+                                <a class="call-style-w3" href="tel:+(250) 788 898 262">{!! $phone[0] !!}</a>
                             </li>
                             <li class="green">Or</li>
-                            <li><a href="contact.html" class="btn btn-style-white btn-style-primary">Get in touch</a>
+                            <li><a href="/contact-us" class="btn btn-style-white btn-style-primary">Get in touch</a>
                             </li>
                         </ul>
                     </div>

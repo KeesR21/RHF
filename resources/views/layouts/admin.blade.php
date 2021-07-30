@@ -108,7 +108,7 @@
 
             <li class="items-center">
               <a href="/admin/posts" class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500">
-                <i class="fas fa-table mr-2 text-sm text-blueGray-300"></i>
+                <i class="fas fa-newspaper mr-2 text-sm text-blueGray-300"></i>
                 News & Updates
               </a>
             </li>
@@ -123,6 +123,14 @@
               <a href="/admin/partners" class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500">
                 <i class="fas fa-table mr-2 text-sm text-blueGray-300"></i>
                 Partners
+              </a>
+            </li>
+            <!-- Divider -->
+            <hr class="my-4 md:min-w-full" />
+            <li class="items-center">
+              <a href="/admin/settings" class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500">
+                <i class="fas fa-cog mr-2 text-sm text-blueGray-300"></i>
+                Edit Site Information
               </a>
             </li>
           </ul>

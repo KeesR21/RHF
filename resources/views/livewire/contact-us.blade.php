@@ -50,7 +50,7 @@
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                                 <div class="ml-3">
                                     <h5 class="contact-text">Call Us:</h5>
-                                    <a href="tel:+0788300261 / 0788308200 / 0788898262">0788300261 / 0788898262</a>
+                                    <a href="tel:+0788300261 / 0788308200 / 0788898262"></a>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                 <div class="ml-3">
                                     <h5 class="contact-text">Mail Us:</h5>
-                                    <a href="mailto:info@rhf.rw"> info@rhf.rw</a>
+                                    <a href="mailto:info@rhf.rw"> {!! $email[0] !!}</a>
                                 </div>
                             </div>
                         </div>

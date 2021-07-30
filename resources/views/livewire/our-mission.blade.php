@@ -29,7 +29,7 @@
                         <div class="section-heading text-center mb-sm-5 mb-4">
                             <h3 class="title-style mb-2">Our mission</h3>
                             <p class="lead">
-                                The Rwanda Healthcare Federation (RHF) exists to coordinate and advocate for the interests of non-state actors in Rwanda’s health sector.
+                                {!! $mission[0] !!}
                             </p>
                         </div>
                     </div>
