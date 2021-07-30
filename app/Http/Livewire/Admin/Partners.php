@@ -12,7 +12,7 @@ class Partners extends Component
 
     use WithFileUploads;
 
-    public Partner $partner;
+    public $partner;
     public $name;
     public $logo;
     public $link;
