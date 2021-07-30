@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 class BoardMembers extends Component
 {
     use WithFileUploads;
-    public Member $member;
+    public $member;
     public $fname;
     public $lname;
     public $position;
