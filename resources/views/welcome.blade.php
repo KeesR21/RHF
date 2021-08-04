@@ -88,8 +88,7 @@
                     <div class="section-heading text-center mb-sm-5 mb-4">
                         <h3 class="title-style mb-2">Our Latest News</h3>
                         <p class="lead">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque,
-                            eaque ipsa quae ab illo inventore.
+                            {{ $news_subtitle[0] ?? '' }}
                         </p>
                     </div>
                 </div>

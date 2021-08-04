@@ -28,8 +28,7 @@
                         <div class="section-heading text-center mb-sm-5 mb-4">
                             <h3 class="title-style mb-2">Projects provided</h3>
                             <p class="lead">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque,
-                                eaque ipsa quae ab illo inventore.
+                                {{ $projects_subtitle[0] }}
                             </p>
                         </div>
                     </div>
@@ -44,11 +43,11 @@
                                     <span class="fa fa-lightbulb-o" aria-hidden="true"></span>
                                 </div>
                                 <div class="services-content">
-                                    <h5><a href="projects.html">{{ $project->title }}</a></h5>
+                                    <h5><a href="/project/{{ $project->slug }}">{{ $project->title }}</a></h5>
                                     <p>
                                         {{ $project->description }}
                                     </p>
-                                    <a href="single-project.html" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                    <a href="/project/{{ $project->slug }}" class="btn read-button d-flex align-items-center mt-4 p-0">Read
                                         More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
                                 </div>
                             </div>
@@ -78,10 +77,10 @@
                     <div class="col-md-7 float-rt text-md-right align-items-center mt-md-0 mt-4">
                         <ul class="buttons">
                             <li class="phone-sec"><span class="fa fa-volume-control-phone mr-1" aria-hidden="true"></span>
-                                <a class="call-style-w3" href="tel:+1(23) 456 789 0000">+1(23) 456 789 0000</a>
+                                <a class="call-style-w3" href="tel:{{ $phone[0] }}">{{ $phone[0] }}</a>
                             </li>
                             <li class="green">Or</li>
-                            <li><a href="contact.html" class="btn btn-style-white btn-style-primary">Get in touch</a>
+                            <li><a href="/contact-us" class="btn btn-style-white btn-style-primary">Get in touch</a>
                             </li>
                         </ul>
                     </div>

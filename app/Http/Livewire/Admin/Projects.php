@@ -31,6 +31,7 @@ class Projects extends Component
             'title' => $this->title,
             'description' => $this->description,
             'body' => $this->content,
+            'slug' => str_slug($this->title)
         ]);
 
         session()->flash('message', 'Project saved Successfully');

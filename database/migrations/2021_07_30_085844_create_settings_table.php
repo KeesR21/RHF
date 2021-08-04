@@ -15,7 +15,7 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->enum('name',['about','mission','location','phone','email','welcome']);
+            $table->enum('name',['about','mission','location','phone','email','welcome','projects_subtitle','posts_subtitle']);
             $table->text('value');
             $table->timestamps();
         });

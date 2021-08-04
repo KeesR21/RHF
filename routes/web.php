@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\AboutUs;
 use App\Http\Livewire\OurMission;
 use App\Http\Livewire\Projects;
+use App\Http\Livewire\ProjectDetails;
 use App\Http\Livewire\ContactUs;
 use App\Http\Livewire\Admin\Posts;
 use App\Http\Livewire\Admin\BoardMembers;
@@ -24,6 +25,7 @@ Route::get('/', function () {
 Route::get('/about-us', AboutUs::class);
 Route::get('/our-mission', OurMission::class);
 Route::get('/our-projects', Projects::class);
+Route::get('/project/{project:slug}', ProjectDetails::class);
 Route::get('/contact-us', ContactUs::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {

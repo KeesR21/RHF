@@ -47,6 +47,14 @@ class settingsSeeder extends Seeder
             'value' => '10001, 5th Kigali, Rwanda',
         ]);
         DB::table('settings')->insert([
+            'name' => 'projects_subtitle',
+            'value' => 'Add this paragraph',
+        ]);
+        DB::table('settings')->insert([
+            'name' => 'news_subtitle',
+            'value' => 'Add this paragraph',
+        ]);
+        DB::table('settings')->insert([
             'name' => 'about',
             'value' => 'The Rwanda Healthcare Federation (RHF) is the premier private health sector body in Rwanda with an ultimate 
             goal of advocating for the interests of the private health sector and promoting access to affordable, 

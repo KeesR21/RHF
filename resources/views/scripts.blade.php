@@ -131,10 +131,6 @@
 </script>
 <!-- //MENU-JS -->
 
-<!-- counter for stats -->
-<script src="assets/js/counter.js"></script>
-<!-- //counter for stats -->
-
 <!-- disable body scroll which navbar is in active -->
 <script>
     $(function() {
