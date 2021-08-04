@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
         $about = Setting::where('name','about')->pluck('value');
         $location = Setting::where('name','location')->pluck('value');
         $projects_subtitle = Setting::where('name','projects_subtitle')->pluck('value');
-        $news_subtitle = Setting::where('name','news_subtitle')->pluck('value');
+        $posts_subtitle = Setting::where('name','posts_subtitle')->pluck('value');
 
         view()->share([
             'email' => $email,
@@ -42,7 +42,7 @@ class AppServiceProvider extends ServiceProvider
             'phone' => $phone,
             'location' => $location,
             'projects_subtitle' => $projects_subtitle,
-            'news_subtitle' => $news_subtitle,
+            'posts_subtitle' => $posts_subtitle,
         ]);
         
         Schema::defaultStringLength(191);

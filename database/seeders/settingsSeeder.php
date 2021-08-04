@@ -50,10 +50,7 @@ class settingsSeeder extends Seeder
             'name' => 'projects_subtitle',
             'value' => 'Add this paragraph',
         ]);
-        DB::table('settings')->insert([
-            'name' => 'news_subtitle',
-            'value' => 'Add this paragraph',
-        ]);
+        
         DB::table('settings')->insert([
             'name' => 'about',
             'value' => 'The Rwanda Healthcare Federation (RHF) is the premier private health sector body in Rwanda with an ultimate 
@@ -62,6 +59,10 @@ class settingsSeeder extends Seeder
             including but not limited to health professionals’ associations, Non-Government Organizations (NGOs) and 
             Faith Based Organizations (FBOs).
             ',
+        ]);
+        DB::table('settings')->insert([
+            'name' => 'posts_subtitle',
+            'value' => 'Add this paragraph',
         ]);
     }
 }
