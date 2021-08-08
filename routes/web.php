@@ -13,6 +13,7 @@ use App\Http\Livewire\Admin\EditSettings;
 use App\Http\Livewire\Admin\EditUser;
 use App\Http\Livewire\Admin\Partners;
 use App\Http\Livewire\Admin\Projects as OurProjects;
+use App\Http\Livewire\PostDetails;
 use App\Http\Resources\postsCollection;
 use App\Models\Post;
 
@@ -26,6 +27,7 @@ Route::get('/about-us', AboutUs::class);
 Route::get('/our-mission', OurMission::class);
 Route::get('/our-projects', Projects::class);
 Route::get('/project/{project:slug}', ProjectDetails::class);
+Route::get('/post/{post:slug}', PostDetails::class);
 Route::get('/contact-us', ContactUs::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {

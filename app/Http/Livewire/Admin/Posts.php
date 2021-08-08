@@ -38,6 +38,7 @@ class Posts extends Component
             'title' => $this->title,
             'description' => $this->description,
             'content' => $this->content,
+            'slug' => str_slug($this->title),
             'image' => $url,
         ]);
 

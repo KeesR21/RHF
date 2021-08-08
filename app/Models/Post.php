@@ -11,6 +11,6 @@ class Post extends Model
     use HasFactory, HasTrixRichText;
 
     protected $fillable = [
-        'title','description','content','image'
+        'title','description','content','image','slug'
     ];
 }

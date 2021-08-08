@@ -14,8 +14,8 @@ class ProjectDetails extends Component
     public function mount(Project $project)
     {
         $this->project = $project;
-        $this->prev_project = Project::where('id','<', $project->id)->select(['slug', 'title', 'created_at'])->first();
-        $this->next_project = Project::where('id','>', $project->id)->select(['slug', 'title', 'created_at'])->first();
+        $this->prev_project = Project::where('id','<', $project->id)->select(['slug', 'title', 'image', 'created_at'])->first();
+        $this->next_project = Project::where('id','>', $project->id)->select(['slug', 'title', 'image' , 'created_at'])->first();
     }
 
     public function render()

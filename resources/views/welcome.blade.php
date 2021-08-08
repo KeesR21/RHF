@@ -99,10 +99,10 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="blog-card-single">
                                 <div class="grids5-info">
-                                    <a href="blog-single.html"><img src="{{ asset('images/uploads/'. $post->image) }}" alt="" /></a>
+                                    <a href="/post/{{ $post->slug }}"><img src="{{ asset('images/uploads/'. $post->image) }}" alt="" /></a>
                                     <div class="blog-info">
                                         <h5>{{ $post->created_at->diffForHumans() }} <a href="blog-single-2.html">New</a></h5>
-                                        <h4><a href="blog-single.html">{{ $post->title }}</a></h4>
+                                        <h4><a href="/post/{{ $post->slug }}">{{ $post->title }}</a></h4>
                                         <p>
                                             {{ $post->description }}
                                         </p>
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <ul class="admin-list d-flex align-items-center justify-content-between">
-                                        <li><a href="blog-single.html"><span class="fa fa-user-circle" aria-hidden="true"></span>
+                                        <li><a href="/post/{{ $post->slug }}"><span class="fa fa-user-circle" aria-hidden="true"></span>
                                                 Admin</a></li>
 
                                     </ul>
