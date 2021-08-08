@@ -7,7 +7,6 @@
                     <div class="p-sticky-blog">
                         @if($prev_project)
                         <aside class="mr-md-0 mr-3">
-                            <!-- <a href="blog-single.html"><img src="assets/images/s3.jpg" class="img-fluid" alt="" /></a> -->
                             <h6 class="text-left-inner-9"><a href="{{ URL::to('/project/'. $prev_project->slug) }}">{{ $prev_project->slug }}</a></h6>
                             <span class="sub-inner-text-9"> {{ $prev_project->created_at->diffForHumans() }}</span>
                             <hr>
@@ -16,7 +15,6 @@
                         @endif
                         @if($next_project)
                         <aside>
-                            <!-- <a href="blog-single.html"><img src="assets/images/s2.jpg" class="img-fluid" alt="" /></a> -->
                             <h6 class="text-left-inner-9"><a href="{{ URL::to('/project/'. $next_project->slug) }}">{{ $next_project->title }}</a>
                             </h6>
                             <span class="sub-inner-text-9">{{ $next_project->created_at->diffForHumans() }}</span>

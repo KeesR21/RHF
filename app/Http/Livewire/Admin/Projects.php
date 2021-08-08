@@ -17,9 +17,9 @@ class Projects extends Component
     public $viewMode = false;
 
     protected $rules = [
-        'title' => 'required|min:3|max:50',
-        'description' => 'required|min:10',
-        'content' => 'required|min:50'
+        'title' => 'required',
+        'description' => 'required',
+        'content' => 'required'
     ];
 
     public function saveProject()

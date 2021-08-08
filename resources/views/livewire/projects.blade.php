@@ -5,7 +5,7 @@
             <div class="container">
                 <h4 class="inner-text-title font-weight-bold text-white mb-sm-3 mb-2">Our Projects</h4>
                 <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Projects</li>
                 </ul>
             </div>
