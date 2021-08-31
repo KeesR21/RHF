@@ -50,7 +50,7 @@
                 <div class="col-lg-6 w3l-features-photo-7_top-left pr-lg-5">
                     <h4 class="title-style mb-2">Welcome message</h4>
                     <p>
-                        {!! $welcome[0] !!}
+                        {!! $welcome ?? ''[0] !!}
                         
                         <br>
                         <b>Dr. Jean Chrysostome Nyirinkwaya</b><br>
@@ -107,13 +107,6 @@
                                             {{ $post->description }}
                                         </p>
                                     </div>
-                                </div>
-                                <div class="card-footer">
-                                    <ul class="admin-list d-flex align-items-center justify-content-between">
-                                        <li><a href="/post/{{ $post->slug }}"><span class="fa fa-user-circle" aria-hidden="true"></span>
-                                                Admin</a></li>
-
-                                    </ul>
                                 </div>
                             </div>
                         </div>

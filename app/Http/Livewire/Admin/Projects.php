@@ -29,14 +29,16 @@ class Projects extends Component
         // dd($this->content);
         $this->validate();
 
-        $url = $this->photo->store('projects','public');
+        $url = $this->photo->store('projects', 'public');
 
         Project::create([
             'title' => $this->title,
             'description' => $this->description,
             'body' => $this->content,
             'image' => $url,
-            'slug' => str_slug($this->title)
+            'slug' => str_slug($this->title),
+            'post-trixFields' => request('post-trixFields'),
+            'attachment-post-trixFields' => request('attachment-post-trixFields')
         ]);
 
         session()->flash('message', 'Project saved Successfully');

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Plugins\ImagesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\AboutUs;
 use App\Http\Livewire\OurMission;
@@ -41,5 +42,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::get('/update/{id}', EditUser::class);
         Route::get('/partners', Partners::class);
         Route::get('/settings', EditSettings::class);
+        Route::post('/images/store', [ImagesController::class, 'store']);
     });
 });
